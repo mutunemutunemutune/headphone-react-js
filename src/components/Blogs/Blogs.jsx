@@ -77,9 +77,9 @@ const Blogs = () => {
     <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       
       {blogData.map((blog) => (
-        <div className="rounded-sm shadow-md md:p-6 p-10 hover:-translate-y-4 duration-300 max-w-[300px] mx-auto">
+        <div className="rounded-md shadow-lg md:p-6 p-4 hover:-translate-y-4 duration-300 max-w-[300px] mx-auto">
 
-          <img src={blog.image} alt="" className=""/>
+          <img src={blog.image} alt="" className="mb-2 w-auto"/>
            <div className="space-y-3 font-poppins">
               <h1 className="text-xl font-bold line-clamp-2">{blog.title}</h1>
               <p className=" line-clamp-2 text-sm">{blog.description}</p>

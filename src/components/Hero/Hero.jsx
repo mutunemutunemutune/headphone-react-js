@@ -44,7 +44,7 @@ const HeadData=[{
   description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   price:'$199.99',
   link:'#',
-  bgColor:"#8B4513",
+  bgColor:"#8B4545",
   modal:"Modal Brown",
   subtitle:"Lorem ipsum dolor sit amet, consect",
 
@@ -56,7 +56,7 @@ const HeadData=[{
   description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   price:'$299.99',
   link:'#',
-  bgColor:"#192b11",
+  bgColor:"#192b15",
   modal:"Lime Green",
   subtitle:"Lorem ipsum dolor sit amet, consect",
 },
@@ -94,9 +94,9 @@ const Hero = () => {
        <div className="grid grid-cols-3 gap-10 mt-4">
         {HeadData.map((items)=>{
           return(
-            <div  key={items.id} onClick={()=>handleActiveData(items)} className="flex gap-4">
+            <div  key={items.id} onClick={()=>handleActiveData(items)} className=" block sm:flex gap-4">
               <div>
-                <img src={items.image} alt="" srcset="" className="w-[200px]" />
+                <img src={items.image} alt="" srcset="" className="md:w-[200px] w-[50px] ml-2 mb-2 lg:w-[350px]" />
               </div>
               <div className="space-y-2 items-center justify-center">
                 <p className="text-base font-bold">{items.price}</p>
